@@ -1,0 +1,59 @@
+html {
+    background-color: black;
+}
+
+.mercuryImg {
+    border-radius: 50%;
+    background-color: grey;
+    height: 100px;
+    width: 100px;
+}
+
+.venusImg {
+    border-radius: 50%;
+    background-color: grey;
+    height: 100px;
+    width: 100px;
+}
+
+.earthImg {
+    border-radius: 50%;
+    background-color: grey;
+    height: 100px;
+    width: 100px;
+}
+
+.marsImg {
+    border-radius: 50%;
+    background-color: grey;
+    height: 100px;
+    width: 100px;
+}
+
+.jupiterImg {
+    border-radius: 50%;
+    background-color: grey;
+    height: 100px;
+    width: 100px;
+}
+
+.saturnImg {
+    border-radius: 50%;
+    background-color: grey;
+    height: 100px;
+    width: 100px;
+}
+
+.uranusImg {
+    border-radius: 50%;
+    background-color: grey;
+    height: 100px;
+    width: 100px;
+}
+
+.neptuneImg {
+    border-radius: 50%;
+    background-color: grey;
+    height: 100px;
+    width: 100px;
+}
