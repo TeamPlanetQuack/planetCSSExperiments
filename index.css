@@ -63,7 +63,7 @@ html {
     border: 16px double #a8a59fc2;
     border-top-width: 0;
     border-radius: 50%;
-    animation: rings 0.8s infinite linear;
+    animation: rings 1.5s infinite linear;
 }
 
 .saturnImg:after {
@@ -73,21 +73,21 @@ html {
     width: 100%;
     height: 100%;
     box-sizing: border-box;
-    /* linear gradient style border below not working */
-    /* border-image: linear-gradient(#756d5d9d 0%, #756d5d34 33%, #756d5d9d 66%); */
-    /* border: 8px solid; */
     border: 8px double #756d5d9d;
     border-top-width: 0;
     border-radius: 50%;
-    animation: rings 0.8s infinite linear;
+    animation: rings 1s infinite linear;
 }
 
 @keyframes rings {
     0%{
     transform: rotateX(65deg) rotateZ(0deg) scale(1.75);
 }
-100%{
+50%{
     transform: rotateX(65deg) rotateZ(0deg) scale(1.7);
+}
+100%{
+    transform: rotateX(65deg) rotateZ(0deg) scale(1.75);
 }
 }
 
