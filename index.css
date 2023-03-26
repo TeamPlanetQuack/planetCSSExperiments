@@ -1,15 +1,22 @@
 html {
-    background-color: navy;
+    background-color: rgb(0, 0, 37);
+    min-height: 100vh;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
 }
 
 .planet {
     border-radius: 50%;
+    display: inline-block;
     height: 100px;
     width: 100px;
-    margin: 10px;
+    margin: 30px;
+}
+
+.planet:hover {
+    transform: scale(1.25)
 }
 
 .mercuryImg {
