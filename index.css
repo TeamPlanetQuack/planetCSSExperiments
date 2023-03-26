@@ -1,59 +1,101 @@
 html {
-    background-color: black;
+    background-color: navy;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.planet {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    margin: 10px;
 }
 
 .mercuryImg {
-    border-radius: 50%;
     background-color: grey;
-    height: 100px;
-    width: 100px;
 }
 
 .venusImg {
-    border-radius: 50%;
     background-color: grey;
-    height: 100px;
-    width: 100px;
 }
 
 .earthImg {
-    border-radius: 50%;
     background-color: grey;
-    height: 100px;
-    width: 100px;
 }
 
 .marsImg {
-    border-radius: 50%;
     background-color: grey;
-    height: 100px;
-    width: 100px;
 }
 
 .jupiterImg {
-    border-radius: 50%;
     background-color: grey;
-    height: 100px;
-    width: 100px;
 }
 
 .saturnImg {
-    border-radius: 50%;
-    background-color: grey;
-    height: 100px;
-    width: 100px;
+    background: linear-gradient(
+  hsl(201 11% 30%) 0%,
+  hsl(109 2% 38%) 5%,
+  hsl(50 6% 43%) 10%,
+  hsl(44 9% 48%) 15%,
+  hsl(40 24% 55%) 20%,
+  hsl(39 40% 61%) 35%,
+  hsl(39 60% 67%) 40%,
+  hsl(39 52% 64%) 44%,
+  hsl(38 44% 61%) 49%,
+  hsl(37 37% 58%) 54%,
+  hsl(38 26% 50%) 61%,
+  hsl(41 24% 41%) 80%,
+  hsl(55 17% 28%) 92%
+);
+    transform-style: preserve-3d;
+    transform: rotateZ(-18deg);
+    box-shadow: 5px 5px 5px 2px rgba(0,0,0,0.75);
 }
 
-.uranusImg {
+.saturnImg:before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    border: 16px solid #a8a59fc2;
+    border-top-width: 0;
     border-radius: 50%;
+    animation: rings 0.8s infinite linear;
+}
+
+.saturnImg:after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    /* linear gradient style border below not working */
+    /* border-image: linear-gradient(#756d5d9d 0%, #756d5d34 33%, #756d5d9d 66%); */
+    /* border: 8px solid; */
+    border: 8px solid #756d5d9d;
+    border-top-width: 0;
+    border-radius: 50%;
+    animation: rings 0.8s infinite linear;
+}
+
+@keyframes rings {
+    0%{
+    transform: rotateX(65deg) rotateZ(0deg) scale(1.75);
+}
+100%{
+    transform: rotateX(65deg) rotateZ(0deg) scale(1.7);
+}
+}
+
+
+.uranusImg {
     background-color: grey;
-    height: 100px;
-    width: 100px;
 }
 
 .neptuneImg {
-    border-radius: 50%;
     background-color: grey;
-    height: 100px;
-    width: 100px;
 }
