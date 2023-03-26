@@ -23,6 +23,57 @@ html {
   transform: scale(1.25);
 }
 
+/* Sun */
+
+.sunImg {
+    border-radius:50%;
+    display: inline-block;
+    height: 200px;
+    width: 200px;
+    margin:30px;
+    box-shadow: 0px 0px 15px 5px hsla(6, 75%, 51%);
+    background: radial-gradient(
+        hsl(11deg 79% 53%) 1%,
+        hsl(17deg 82% 53%) 32%,
+        hsl(22deg 84% 53%) 42%,
+        hsl(26deg 86% 53%) 49%,
+        hsl(30deg 88% 53%) 53%,
+        hsl(33deg 90% 54%) 57%,
+        hsl(36deg 92% 54%) 59%,
+        hsl(38deg 93% 54%) 61%,
+        hsl(41deg 94% 54%) 63%,
+        hsl(43deg 95% 54%) 64%,
+        hsl(45deg 96% 54%) 65%,
+        hsl(47deg 97% 54%) 66%,
+        hsl(49deg 98% 54%) 67%,
+        hsl(45deg 94% 53%) 67%,
+        hsl(41deg 91% 53%) 68%,
+        hsl(36deg 87% 53%) 68%,
+        hsl(29deg 83% 52%) 69%,
+        hsl(20deg 79% 51%) 69%,
+        hsl(6, 75%, 51%) 70%,
+        hsla(6, 75%, 51%, 0.752) 75%,
+        hsla(6, 75%, 51%, 0.548) 80%,
+        hsla(6, 75%, 51%, 0.325) 85%,
+        hsla(6, 75%, 51%, 0.152) 90%,
+        hsla(0, 0%, 100%, 0) 95%
+    );
+    animation: sunPulse 2s infinite linear;
+    transition: transform 330ms ease;
+}
+
+@keyframes sunPulse {
+    0%{
+        transform: scale(1)
+    }
+    50%{
+        transform: scale(1.02)
+    }
+    100%{
+        transform: scale(1)
+    }
+}
+
 /* Mercury */
 
 .mercuryImg {
@@ -74,6 +125,7 @@ html {
       35px 80px 10px 1px rgba(255, 255, 255, 0.3),
       23px 90px 8px 1px rgba(255, 255, 255, 0.1);
       animation: shiftClouds 2s infinite linear;
+      transition: transform 330ms ease;
   }
 
 @keyframes shiftClouds {
@@ -84,10 +136,10 @@ html {
         transform: translateX(2px) translateY(0px);
     }
     50% {
-        transform: translateX(2px) translateY(1px);
+        transform: translateX(2px) translateY(2px);
     }
     75% {
-        transform: translateX(0px) translateY(1px);
+        transform: translateX(0px) translateY(2px);
     }
     100% {
         transform: translateX(0px) translateY(0px);
@@ -139,6 +191,7 @@ html {
   border-top-width: 0;
   border-radius: 50%;
   animation: rings 1.5s infinite linear;
+  transition: transform 330ms ease;
 }
 
 .saturnImg:after {
@@ -152,6 +205,7 @@ html {
   border-top-width: 0;
   border-radius: 50%;
   animation: rings 1s infinite linear;
+  transition: transform 330ms ease;
 }
 
 @keyframes rings {
