@@ -38,55 +38,6 @@ html {
 /* Earth */
 
 .earthImg {
-  background-color: #0c0e3b;
-  border: 0.2px solid #b2dcff40;
-  overflow: hidden;
-}
-
-.earthImg:before {
-  content: "";
-  position: absolute;
-  /* background-color: #00a6cf00; */
-  width: 25px;
-  height: 25px;
-  border-radius: 20px;
-  box-shadow: 
-    25px 10px 5px 2px #273816, 
-    4px 25px 5px 2px #273816, 
-    10px 50px 5px 2px #273816, 
-    25px 50px 5px 2px #273816, 
-    25px 70px 5px 2px #273816, 
-    58px 55px 5px 2px #273816, 
-    65px 60px 5px 2px#273816, 
-    65px 15px 5px 2px #273816, 
-    55px 20px 5px 2px #273816;
-
-}
-
-.earthImg:after {
-  content: "";
-  position: absolute;
-  width: 50px;
-  height: 5px;
-  border-radius: 50%;
-  box-shadow: 
-    22px 5px 8px 2px rgba(255, 255, 255, 0.093),
-    /* 14px 15px 8px 2px rgba(255, 255, 255, 0.832), */
-    /* 40px 20px 8px 2px rgba(255, 255, 255, 0.341), */
-    10px 25px 8px 2px rgba(255, 255, 255, 0.567),
-    45px 30px 8px 2px rgba(255, 255, 255, 0.486),
-    /* 10px 40px 8px 2px rgba(255, 255, 255, 0.816), */
-    45px 45px 8px 2px rgba(255, 255, 255, 0.341),
-    0px 50px 8px 2px rgba(255, 255, 255, 0.486),
-    /* 15px 60px 8px 2px rgba(255, 255, 255, 0.567), */
-    45px 65px 8px 2px rgba(255, 255, 255, 0.641),
-    /* 5px 70px 8px 2px rgba(255, 255, 255, 0.486), */
-    35px 80px 8px 2px rgba(255, 255, 255, 0.341),
-    23px 90px 8px 2px rgba(255, 255, 255, 0.556);
-    animation: shiftClouds 1.5s infinite linear;
-}
-
-.earthImg2 {
     background: linear-gradient(
         180deg,
         hsl(237 66% 14%) 0%,
@@ -105,10 +56,9 @@ html {
         hsl(230 50% 14%) 85%,
         hsl(237 66% 14%) 100%
       );
-    /* border: 0.2px solid #b2dcff40; */
 }
 
-.earthImg2:after {
+.earthImg:after {
     content: "";
     position: absolute;
     width: 50px;
@@ -132,15 +82,12 @@ html {
     }
     25% {
         transform: translateX(2px) translateY(0px);
-
     }
     50% {
         transform: translateX(2px) translateY(1px);
-
     }
     75% {
         transform: translateX(0px) translateY(1px);
-
     }
     100% {
         transform: translateX(0px) translateY(0px);
