@@ -1,108 +1,232 @@
 html {
-    background-color: rgb(0, 0, 37);
-    min-height: 100vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+  background-color: rgb(0, 0, 37);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
+/* All Planets */
+
 .planet {
-    border-radius: 50%;
-    display: inline-block;
-    height: 100px;
-    width: 100px;
-    margin: 30px;
+  border-radius: 50%;
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+  margin: 30px;
+  transition: transform 330ms ease-in-out;
 }
 
 .planet:hover {
-    transform: scale(1.25)
+  transform: scale(1.25);
 }
+
+/* Mercury */
 
 .mercuryImg {
-    background-color: grey;
+  background-color: grey;
 }
+
+/* Venus */
 
 .venusImg {
-    background-color: grey;
+  background-color: grey;
 }
+
+/* Earth */
 
 .earthImg {
-    background-color: grey;
+  background-color: #0c0e3b;
+  border: 0.2px solid #b2dcff40;
+  overflow: hidden;
 }
+
+.earthImg:before {
+  content: "";
+  position: absolute;
+  /* background-color: #00a6cf00; */
+  width: 25px;
+  height: 25px;
+  border-radius: 20px;
+  box-shadow: 
+    25px 10px 5px 2px #273816, 
+    4px 25px 5px 2px #273816, 
+    10px 50px 5px 2px #273816, 
+    25px 50px 5px 2px #273816, 
+    25px 70px 5px 2px #273816, 
+    58px 55px 5px 2px #273816, 
+    65px 60px 5px 2px#273816, 
+    65px 15px 5px 2px #273816, 
+    55px 20px 5px 2px #273816;
+
+}
+
+.earthImg:after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 5px;
+  border-radius: 50%;
+  box-shadow: 
+    22px 5px 8px 2px rgba(255, 255, 255, 0.093),
+    /* 14px 15px 8px 2px rgba(255, 255, 255, 0.832), */
+    /* 40px 20px 8px 2px rgba(255, 255, 255, 0.341), */
+    10px 25px 8px 2px rgba(255, 255, 255, 0.567),
+    45px 30px 8px 2px rgba(255, 255, 255, 0.486),
+    /* 10px 40px 8px 2px rgba(255, 255, 255, 0.816), */
+    45px 45px 8px 2px rgba(255, 255, 255, 0.341),
+    0px 50px 8px 2px rgba(255, 255, 255, 0.486),
+    /* 15px 60px 8px 2px rgba(255, 255, 255, 0.567), */
+    45px 65px 8px 2px rgba(255, 255, 255, 0.641),
+    /* 5px 70px 8px 2px rgba(255, 255, 255, 0.486), */
+    35px 80px 8px 2px rgba(255, 255, 255, 0.341),
+    23px 90px 8px 2px rgba(255, 255, 255, 0.556);
+    animation: shiftClouds 1.5s infinite linear;
+}
+
+.earthImg2 {
+    background: linear-gradient(
+        180deg,
+        hsl(237 66% 14%) 0%,
+        hsl(230 50% 14%) 10%,
+        hsl(221 38% 15%) 18%,
+        hsl(206 27% 15%) 25%,
+        hsl(174 17% 14%) 33%,
+        hsl(133 18% 16%) 40%,
+        hsl(103 27% 16%) 47%,
+        hsl(90 44% 15%) 54%,
+        hsl(103 27% 16%) 61%,
+        hsl(133 18% 16%) 68%,
+        hsl(174 17% 14%) 74%,
+        hsl(206 27% 15%) 81%,
+        hsl(221 38% 15%) 83%,
+        hsl(230 50% 14%) 85%,
+        hsl(237 66% 14%) 100%
+      );
+    /* border: 0.2px solid #b2dcff40; */
+}
+
+.earthImg2:after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 5px;
+    border-radius: 50%;
+    box-shadow: 
+      22px 5px 8px 1px rgba(255, 255, 255, 0.1),
+      10px 25px 8px 1px rgba(255, 255, 255, 0.2),
+      45px 30px 10px 1px rgba(255, 255, 255, 0.3),
+      45px 45px 8px 1px rgba(255, 255, 255, 0.2),
+      0px 50px 8px 1px rgba(255, 255, 255, 0.1),
+      25px 65px 8px 1px rgba(255, 255, 255, 0.2),
+      35px 80px 10px 1px rgba(255, 255, 255, 0.3),
+      23px 90px 8px 1px rgba(255, 255, 255, 0.1);
+      animation: shiftClouds 2s infinite linear;
+  }
+
+@keyframes shiftClouds {
+    0% {
+        transform: translateX(0px) translateY(0px);
+    }
+    25% {
+        transform: translateX(2px) translateY(0px);
+
+    }
+    50% {
+        transform: translateX(2px) translateY(1px);
+
+    }
+    75% {
+        transform: translateX(0px) translateY(1px);
+
+    }
+    100% {
+        transform: translateX(0px) translateY(0px);
+    }
+}
+
+/* Mars */
 
 .marsImg {
-    background-color: grey;
+  background-color: grey;
 }
+
+/* Jupiter */
 
 .jupiterImg {
-    background-color: grey;
+  background-color: grey;
 }
 
+/* Saturn */
+
 .saturnImg {
-    background: linear-gradient(
-  hsl(201 11% 30%) 0%,
-  hsl(109 2% 38%) 5%,
-  hsl(50 6% 43%) 10%,
-  hsl(44 9% 48%) 15%,
-  hsl(40 24% 55%) 20%,
-  hsl(39 40% 61%) 35%,
-  hsl(39 60% 67%) 40%,
-  hsl(39 52% 64%) 44%,
-  hsl(38 44% 61%) 49%,
-  hsl(37 37% 58%) 54%,
-  hsl(38 26% 50%) 61%,
-  hsl(41 24% 41%) 80%,
-  hsl(55 17% 28%) 92%
-);
-    transform-style: preserve-3d;
-    transform: rotateZ(-18deg);
-    box-shadow: 5px 5px 5px 2px rgba(0,0,0,0.75);
+  background: linear-gradient(
+    hsl(201 11% 30%) 0%,
+    hsl(109 2% 38%) 5%,
+    hsl(50 6% 43%) 10%,
+    hsl(44 9% 48%) 15%,
+    hsl(40 24% 55%) 20%,
+    hsl(39 40% 61%) 35%,
+    hsl(39 60% 67%) 40%,
+    hsl(39 52% 64%) 44%,
+    hsl(38 44% 61%) 49%,
+    hsl(37 37% 58%) 54%,
+    hsl(38 26% 50%) 61%,
+    hsl(41 24% 41%) 80%,
+    hsl(55 17% 28%) 92%
+  );
+  transform-style: preserve-3d;
+  transform: rotateZ(-18deg);
+  box-shadow: 5px 5px 5px 2px rgba(0, 0, 0, 0.75);
 }
 
 .saturnImg:before {
-    position: absolute;
-    content: "";
-    display: block;
-    width: 100%;
-    height: 100%;
-    box-sizing: border-box;
-    border: 16px double #a8a59fc2;
-    border-top-width: 0;
-    border-radius: 50%;
-    animation: rings 1.5s infinite linear;
+  position: absolute;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  border: 16px double #a8a59fc2;
+  border-top-width: 0;
+  border-radius: 50%;
+  animation: rings 1.5s infinite linear;
 }
 
 .saturnImg:after {
-    position: absolute;
-    content: "";
-    display: block;
-    width: 100%;
-    height: 100%;
-    box-sizing: border-box;
-    border: 8px double #756d5d9d;
-    border-top-width: 0;
-    border-radius: 50%;
-    animation: rings 1s infinite linear;
+  position: absolute;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  border: 8px double #756d5d9d;
+  border-top-width: 0;
+  border-radius: 50%;
+  animation: rings 1s infinite linear;
 }
 
 @keyframes rings {
-    0%{
+  0% {
     transform: rotateX(65deg) rotateZ(0deg) scale(1.75);
-}
-50%{
+  }
+  50% {
     transform: rotateX(65deg) rotateZ(0deg) scale(1.7);
-}
-100%{
+  }
+  100% {
     transform: rotateX(65deg) rotateZ(0deg) scale(1.75);
-}
+  }
 }
 
+/* Uranus */
 
 .uranusImg {
-    background-color: grey;
+  background-color: grey;
 }
 
+/* Neptune */
+
 .neptuneImg {
-    background-color: grey;
+  background-color: grey;
 }
