@@ -60,7 +60,7 @@ html {
     width: 100%;
     height: 100%;
     box-sizing: border-box;
-    border: 16px solid #a8a59fc2;
+    border: 16px double #a8a59fc2;
     border-top-width: 0;
     border-radius: 50%;
     animation: rings 0.8s infinite linear;
@@ -76,7 +76,7 @@ html {
     /* linear gradient style border below not working */
     /* border-image: linear-gradient(#756d5d9d 0%, #756d5d34 33%, #756d5d9d 66%); */
     /* border: 8px solid; */
-    border: 8px solid #756d5d9d;
+    border: 8px double #756d5d9d;
     border-top-width: 0;
     border-radius: 50%;
     animation: rings 0.8s infinite linear;
