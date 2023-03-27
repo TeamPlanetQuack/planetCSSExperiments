@@ -245,7 +245,7 @@ transform: rotateZ(-18deg);
 
 .marsImg {
     background-image: linear-gradient(
-        190deg,
+        180deg,
         hsl(17deg 44% 44%) 0%,
         hsl(16deg 42% 47%) 14%,
         hsl(16deg 39% 50%) 21%,
@@ -300,8 +300,63 @@ transform: rotateZ(-18deg);
 /* Jupiter */
 
 .jupiterImg {
-  background-color: grey;
-}
+    background-image: linear-gradient(
+        180deg,
+        #625541 0%,
+        #967b5f 14%,
+        #beb092 21%,
+        #a4896b 26%,
+        #c4bdaa 30%,
+        #b7a787 35%,
+        #e1e8e1 39%,
+        #d08f6e 43%,
+        #edd8ab 46%,
+        #ffd48f 50%,
+        #f1f3e1 54%,
+        #d1b28a 57%,
+        #f3e4c0 61%,
+        #a1715e 65%,
+        #d8b18a 69%,
+        #dbded3 74%,
+        #d1c7ac 79%,
+        #8d7961 86%,
+        #4a4438 100%
+      );
+      transform: rotateZ(-18deg);
+  }
+
+  .jupiterImg:before {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    box-shadow: 
+      65px 65px 7px 6px #ea7736,
+      50px 80px 0.5px rgb(255, 255, 255, 0.73),
+      70px 80px 0.5px rgba(255, 255, 255, 0.73);
+      animation: shiftClouds 2s infinite linear;
+      transition: transform 330ms ease;
+  }
+
+  .jupiterImg:after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 5px;
+    border-radius: 50%;
+    box-shadow: 
+      22px 5px 8px 1px rgba(255, 255, 255, 0.1),
+      10px 25px 8px 1px rgba(255, 255, 255, 0.2),
+      45px 30px 10px 1px rgba(255, 255, 255, 0.3),
+      45px 45px 8px 1px rgba(255, 255, 255, 0.2),
+      0px 50px 8px 1px rgba(255, 255, 255, 0.1),
+      25px 65px 8px 1px rgba(255, 255, 255, 0.2),
+      35px 80px 10px 1px rgba(255, 255, 255, 0.3),
+      23px 90px 8px 1px rgba(255, 255, 255, 0.1);
+      animation: shiftClouds 2s infinite linear;
+      transition: transform 330ms ease;
+  }
 
 /* Saturn */
 
