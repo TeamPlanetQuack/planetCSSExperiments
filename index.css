@@ -101,7 +101,8 @@ body {
   hsl(0deg 0% 53%) 60%,
   hsl(0deg 0% 40%) 80%,
   hsl(0deg 0% 67%) 100%
-)
+);
+transform: rotateZ(-18deg);
   }
 
 .mercuryImg:after {
@@ -157,8 +158,8 @@ body {
         hsl(24deg 10% 83%) 86%,
         hsl(207deg 11% 85%) 100%
       );
-      transform: rotateZ(-10deg);
-}
+      transform: rotateZ(-18deg);
+    }
 
 .venusImg:after {
     content: "";
@@ -200,6 +201,7 @@ body {
         hsl(230 50% 14%) 85%,
         hsl(237 66% 14%) 100%
       );
+      transform: rotateZ(-18deg);
 }
 
 .earthImg:after {
@@ -242,8 +244,58 @@ body {
 /* Mars */
 
 .marsImg {
-  background-color: grey;
-}
+    background-image: linear-gradient(
+        190deg,
+        hsl(17deg 44% 44%) 0%,
+        hsl(16deg 42% 47%) 14%,
+        hsl(16deg 39% 50%) 21%,
+        hsl(16deg 41% 52%) 26%,
+        hsl(15deg 44% 55%) 30%,
+        hsl(15deg 43% 54%) 35%,
+        hsl(16deg 38% 51%) 39%,
+        hsl(16deg 39% 47%) 43%,
+        hsl(16deg 41% 42%) 46%,
+        hsl(17deg 44% 37%) 50%,
+        hsl(17deg 44% 38%) 54%,
+        hsl(17deg 44% 38%) 57%,
+        hsl(17deg 44% 39%) 61%,
+        hsl(17deg 44% 40%) 65%,
+        hsl(16deg 41% 41%) 69%,
+        hsl(15deg 36% 42%) 74%,
+        hsl(15deg 32% 43%) 79%,
+        hsl(14deg 29% 44%) 86%,
+        hsl(13deg 26% 45%) 100%
+      );
+      transform: rotateZ(-18deg);
+  }
+
+.marsImg:after {
+    content: "";
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    box-shadow: 
+      45px 10px 8px 2px #e68f6b,
+      45px 45px 8px 2px #e68f6b,
+      60px 50px 8px 2px rgb(38, 38, 38, 0.718),
+      75px 70px 8px 2px #e68f6b,
+      35px 45px 8px 2px rgb(38, 38, 38, 0.718);
+  }
+
+  .marsImg:before {
+    content: "";
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    box-shadow: 
+    80px 50px 8px 2px rgb(38, 38, 38, 0.718),
+    75px 15px 8px 2px #e68f6b,
+    20px 50px 8px 2px rgb(38, 38, 38, 0.718),
+    70px 45px 8px 2px rgb(38, 38, 38, 0.718),
+    70px 85px 8px 2px #e68f6b;
+  }
 
 /* Jupiter */
 
