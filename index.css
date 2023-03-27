@@ -1,5 +1,5 @@
 html {
-  background-color: rgb(0, 0, 37);
+  background-color: rgb(0, 0, 46);
   min-height: 100vh;
   display: flex;
   flex-direction: row;
@@ -77,8 +77,44 @@ html {
 /* Mercury */
 
 .mercuryImg {
-  background-color: grey;
-}
+    background-image: linear-gradient(
+  0deg,
+  hsl(0deg 0% 77%) 0%,
+  hsl(0deg 0% 54%) 20%,
+  hsl(0deg 0% 58%) 40%,
+  hsl(0deg 0% 53%) 60%,
+  hsl(0deg 0% 40%) 80%,
+  hsl(0deg 0% 67%) 100%
+)
+  }
+
+.mercuryImg:after {
+    content: "";
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    box-shadow: 
+      45px 10px 8px 2px rgba(255, 255, 255, 0.718),
+      10px 50px 8px 2px rgb(38, 38, 38, 0.718),
+      45px 45px 8px 2px rgb(255, 255, 255, 0.718),
+      35px 80px 8px 2px rgb(38, 38, 38, 0.718),
+      75px 50px 8px 2px rgb(255, 255, 255, 0.718);
+  }
+
+  .mercuryImg:before {
+    content: "";
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    box-shadow: 
+      25px 65px 8px 2px rgb(38, 38, 38, 0.718),
+      65px 75px 8px 2px rgb(255, 255, 255, 0.718),
+      10px 25px 8px 2px rgb(38, 38, 38, 0.718),
+      65px 35px 8px 2px rgb(255, 255, 255, 0.718),
+      25px 40px 8px 2px rgb(38, 38, 38, 0.718);
+  }
 
 /* Venus */
 
