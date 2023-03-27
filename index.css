@@ -183,7 +183,7 @@ transform: rotateZ(-18deg);
 /* Earth */
 
 .earthImg {
-    background: linear-gradient(
+    /* background: linear-gradient(
         180deg,
         hsl(237 66% 14%) 0%,
         hsl(230 50% 14%) 10%,
@@ -200,7 +200,21 @@ transform: rotateZ(-18deg);
         hsl(221 38% 15%) 83%,
         hsl(230 50% 14%) 85%,
         hsl(237 66% 14%) 100%
-      );
+      ); */
+      background-image: linear-gradient(
+  180deg,
+  hsl(242deg 42% 33%) 0%,
+  hsl(226deg 23% 32%) 20%,
+  hsl(130deg 10% 32%) 29%,
+  hsl(130deg 10% 32%) 36%,
+  hsl(226deg 23% 32%) 43%,
+  hsl(242deg 42% 33%) 50%,
+  hsl(226deg 23% 32%) 57%,
+  hsl(130deg 10% 32%) 64%,
+  hsl(130deg 10% 32%) 71%,
+  hsl(226deg 23% 32%) 80%,
+  hsl(242deg 42% 33%) 100%
+);
       transform: rotateZ(-18deg);
 }
 
