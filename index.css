@@ -390,7 +390,7 @@ transform: rotateZ(-18deg);
   border: 16px double #a8a59fc2;
   border-top-width: 0;
   border-radius: 50%;
-  animation: rings 1.5s infinite linear;
+  animation: srings 1.5s infinite linear;
   transition: transform 330ms ease;
 }
 
@@ -404,11 +404,11 @@ transform: rotateZ(-18deg);
   border: 8px double #756d5d9d;
   border-top-width: 0;
   border-radius: 50%;
-  animation: rings 1s infinite linear;
+  animation: srings 1s infinite linear;
   transition: transform 330ms ease;
 }
 
-@keyframes rings {
+@keyframes srings {
   0% {
     transform: rotateX(65deg) rotateZ(0deg) scale(1.75);
   }
@@ -423,8 +423,71 @@ transform: rotateZ(-18deg);
 /* Uranus */
 
 .uranusImg {
-  background-color: grey;
+    background-image: linear-gradient(
+        180deg,
+        hsl(182deg 68% 89%) 0%,
+        hsl(182deg 61% 87%) 14%,
+        hsl(183deg 55% 86%) 21%,
+        hsl(183deg 51% 84%) 26%,
+        hsl(184deg 47% 83%) 30%,
+        hsl(184deg 44% 82%) 35%,
+        hsl(184deg 42% 81%) 39%,
+        hsl(184deg 40% 80%) 43%,
+        hsl(184deg 39% 79%) 46%,
+        hsl(184deg 37% 78%) 50%,
+        hsl(185deg 33% 75%) 54%,
+        hsl(186deg 30% 72%) 57%,
+        hsl(187deg 27% 69%) 61%,
+        hsl(188deg 25% 66%) 65%,
+        hsl(189deg 23% 63%) 69%,
+        hsl(189deg 21% 61%) 74%,
+        hsl(189deg 19% 58%) 79%,
+        hsl(190deg 18% 55%) 86%,
+        hsl(191deg 17% 53%) 100%
+      );
+      transform-style: preserve-3d;
+      transform: rotateZ(-18deg);
 }
+
+.uranusImg:before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    border: 4px double #a8a59fc2;
+    border-top-width: 0;
+    border-radius: 50%;
+    animation: urings 1.5s infinite linear;
+    transition: transform 330ms ease;
+  }
+  
+  .uranusImg:after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    border: 4px double #756d5d9d;
+    border-top-width: 0;
+    border-radius: 50%;
+    animation: urings 1s infinite linear;
+    transition: transform 330ms ease;
+  }
+
+  @keyframes urings {
+    0% {
+      transform: rotateX(150deg) rotateY(80deg) rotateZ(0deg) scale(1.75);
+    }
+    50% {
+      transform: rotateX(150deg) rotateY(80deg) rotateZ(0deg) scale(1.7);
+    }
+    100% {
+      transform: rotateX(150deg) rotateY(80deg) rotateZ(0deg) scale(1.75);
+    }
+  }
 
 /* Neptune */
 
