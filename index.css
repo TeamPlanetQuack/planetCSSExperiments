@@ -7,8 +7,6 @@ html {
   align-items: center;
 }
 
-
-
 body {
   background-image: 
     radial-gradient(floralwhite, rgba(255,255,255,.1) 2px, transparent 30px), 
@@ -18,7 +16,6 @@ body {
   background-size: 200px 200px, 300px 300px, 230px 230px, 260px 260px;
   background-position: -10px -5px, 0px 0px, 5px 10px, -5px 5px;
   min-height: 120vh;
-  overflow: hidden;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -138,8 +135,49 @@ body {
 /* Venus */
 
 .venusImg {
-  background-color: grey;
+    background-image: linear-gradient(
+        0deg,
+        hsl(228deg 2% 52%) 0%,
+        hsl(224deg 4% 62%) 14%,
+        hsl(223deg 6% 71%) 21%,
+        hsl(222deg 10% 78%) 26%,
+        hsl(222deg 16% 85%) 30%,
+        hsl(226deg 14% 87%) 35%,
+        hsl(265deg 4% 84%) 39%,
+        hsl(5deg 6% 81%) 43%,
+        hsl(21deg 13% 78%) 46%,
+        hsl(25deg 18% 74%) 50%,
+        hsl(26deg 28% 74%) 54%,
+        hsl(27deg 37% 74%) 57%,
+        hsl(27deg 46% 74%) 61%,
+        hsl(28deg 56% 74%) 65%,
+        hsl(28deg 55% 76%) 69%,
+        hsl(27deg 42% 78%) 74%,
+        hsl(26deg 27% 81%) 79%,
+        hsl(24deg 10% 83%) 86%,
+        hsl(207deg 11% 85%) 100%
+      );
+      transform: rotateZ(-10deg);
 }
+
+.venusImg:after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 5px;
+    border-radius: 50%;
+    box-shadow: 
+      22px 5px 8px 1px rgba(255, 255, 255, 0.1),
+      10px 25px 8px 1px rgba(255, 255, 255, 0.2),
+      45px 30px 10px 1px rgba(255, 255, 255, 0.3),
+      45px 45px 8px 1px rgba(255, 255, 255, 0.2),
+      0px 50px 8px 1px rgba(255, 255, 255, 0.1),
+      25px 65px 8px 1px rgba(255, 255, 255, 0.2),
+      35px 80px 10px 1px rgba(255, 255, 255, 0.3),
+      23px 90px 8px 1px rgba(255, 255, 255, 0.1);
+      animation: shiftClouds 2s infinite linear;
+      transition: transform 330ms ease;
+  }
 
 /* Earth */
 
